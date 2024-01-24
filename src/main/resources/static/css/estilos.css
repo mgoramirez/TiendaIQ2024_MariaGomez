@@ -1,0 +1,19 @@
+#tituloPrincipal{ 
+    color: dodgerblue;
+    font-family: sans-serif;
+}
+
+.parrafoPrimario{ /*Se aplica la primera que aparezca*/
+    color:red;
+    font-size: 20px;
+}
+
+.parrafoSecundario{
+    color:darkblue;
+    font-size: 20px;
+}
+
+p{
+    background-color:antiquewhite;
+}
+
