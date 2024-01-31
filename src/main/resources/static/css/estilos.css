@@ -1,9 +1,9 @@
-#tituloPrincipal{ 
+/*#tituloPrincipal{ 
     color: dodgerblue;
     font-family: sans-serif;
 }
 
-.parrafoPrimario{ /*Se aplica la primera que aparezca*/
+.parrafoPrimario{ Se aplica la primera que aparezca
     color:red;
     font-size: 20px;
 }
@@ -17,3 +17,54 @@ p{
     background-color:antiquewhite;
 }
 
+a:link{
+    color: chocolate;
+}
+
+a:visited{
+    color: whitesmoke;
+    background-color: black;
+    
+}
+
+a:hover{
+    transition: 1s;
+    background-color: red;
+    border-radius: 25px;
+}
+
+a:active{
+    background-color: green;
+    color: orange;
+}
+
+p:nth-child(2){ Al segundo parrafo
+    background-color: red;
+}
+
+p:nth-child(even){ 
+    background-color: red;
+}
+
+p:nth-child(odd){ 
+    background-color: green;
+}
+
+div.contenedor p:nth-child(odd){ Para la clase contenedor dentro del div
+    background-color: blue;
+}
+
+article p:nth-child(odd){
+    background-color: lightcoral;
+}*/
+
+.contenedor{
+    top:12%;
+    left:0;
+    height: 78%;
+    background-color: bisque;
+    margin:0px;
+    padding:10px;
+    width: 100%;
+    position:fixed;
+}
