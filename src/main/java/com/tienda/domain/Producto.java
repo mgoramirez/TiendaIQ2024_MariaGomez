@@ -22,19 +22,23 @@ public class Producto implements Serializable{
     private int existencias;
     private String rutaImagen;
     private boolean activo;
-    private Long idCategoria;
-
+   // private Long idCategoria;
+    
+    @ManyToOne
+    @JoinColumn(name="id_categoria") // Join id_categoria del producto
+    Categoria categoria; //Busca en Categoria y lo pega con id_categoria de categoria
+    
     public Producto() {
     }
 
-    public Producto(String descripcion, String detalle, double precio, int existencias, String rutaImagen, boolean activo, Long idCategoria) {
+    public Producto(String descripcion, String detalle, double precio, int existencias, String rutaImagen, boolean activo, Categoria categoria) {
         this.descripcion = descripcion;
         this.detalle = detalle;
         this.precio = precio;
         this.existencias = existencias;
         this.rutaImagen = rutaImagen;
         this.activo = activo;
-        this.idCategoria = idCategoria;
+        this.categoria = categoria;
     }
     
     

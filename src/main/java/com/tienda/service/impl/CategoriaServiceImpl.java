@@ -42,5 +42,12 @@ public class CategoriaServiceImpl implements CategoriaService{
     public void delete(Categoria categoria) {
         categoriaDao.delete(categoria);
     }
+
+    @Override
+    @Transactional(readOnly = true)
+    public List<Categoria> buscarPorDescripcion(String descripcion) {
+        return categoriaDao.findByDescripcion(descripcion); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+    
     
 }
